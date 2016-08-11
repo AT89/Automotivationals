@@ -29,12 +29,15 @@ var load = function()
 			var post = null,
 				title = $('h1');
 
-			while(post == null || post.data.title.match(/shower ?thoughts/i))
+			while(post == null || post.data.title.match(/Shower? thoughsts/i))
 			{
 				post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
+
+
+
 			}
 
-			title.text(post.data.title.trim().replace(/\.$/, ''));
+    title.text(post.data.title.trim().replace(/\.$/, ''))
 
 			$(window).trigger('resize');
 		}
