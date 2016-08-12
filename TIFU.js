@@ -28,8 +28,9 @@ var load = function()
 		{
 			var post = null,
 				title = $('h1');
+				contents = $('#TIFUcontents')
 
-			while(post == null || post.data.title.match(/today ? I ? fucked ? up/i))
+			while((post == null || post.data.title.match(/today ? I ? fucked ? up/i))&& post == null || post.data.selftext.match(/today ? I ? fucked ? up/i) ) //not working :(
 			{
 				post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 
@@ -53,6 +54,7 @@ $(function()
 	$(window).on('resize scroll', function()
 	{
 		var title = $('h1');
+		var contents = $('#TIFUcontents')
 
 		title.css(
 		{
