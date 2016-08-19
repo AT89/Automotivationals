@@ -34,7 +34,7 @@ var load = function()
 			{
 				post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 
-
+//SLICE(0,4) WHY U NOT WORK
 
 			}
 
