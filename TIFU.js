@@ -27,8 +27,9 @@ var load = function()
 		success: function(data)
 		{
 			var post = null,
-				title = $('h1');
+				title = $('h1'),
 				contents = $('#TIFUcontents')
+				//add URL link 
 
 			while((post == null || post.data.title.match(/today ? I ? fucked ? up/i))&& post == null || post.data.selftext.match(/today ? I ? fucked ? up/i) ) //not working :(
 			{
