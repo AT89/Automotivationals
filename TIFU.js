@@ -29,7 +29,7 @@ var load = function()
 			var post = null,
 				title = $('h1'),
 				contents = $('#TIFUcontents')
-				//add URL link 
+				//add URL link
 
 			while((post == null || post.data.title.match(/today ? I ? fucked ? up/i))&& post == null || post.data.selftext.match(/today ? I ? fucked ? up/i) ) //not working :(
 			{
@@ -37,6 +37,9 @@ var load = function()
 
 //SLICE(0,4) WHY U NOT WORK
 
+
+//changing URL here
+			url = $('#reddit_url').attr("href", post.data.url)
 			}
 
     title.text(post.data.title.trim().replace(/\.$/, ''))

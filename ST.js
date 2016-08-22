@@ -36,6 +36,8 @@ var load = function()
 
 
 			}
+//changing URL here
+			url = $('#reddit_url').attr("href", post.data.url)
 
     title.text(post.data.title.trim().replace(/\.$/, ''))
 
@@ -43,7 +45,7 @@ var load = function()
 		}
 	});
 };
-
+//refresh page on click anywhere
 $(function()
 {
 	load();

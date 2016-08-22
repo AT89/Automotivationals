@@ -34,7 +34,8 @@ var load = function()
 				post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 
 
-
+				//changing URL here
+							url = $('#reddit_url').attr("href", post.data.url)
 			}
 
     title.text(post.data.title.trim().replace(/\.$/, ''))
