@@ -42,7 +42,8 @@ var load = function()
 			url = $('#reddit_url').attr("href", post.data.url)
 			}
 
-    title.text(post.data.title.trim().replace(/\.$/, ''))
+			title.text(post.data.title.trim().replace(/\.$/, ''))
+
 
 			$(window).trigger('resize');
 		}
