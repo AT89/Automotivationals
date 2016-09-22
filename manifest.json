@@ -1,0 +1,12 @@
+{
+  "name": "Stagnation",
+  "version": "1.0",
+  "author": "http://anhtice.com",
+  "manifest_version": 2,
+  "description": "Gets very important information from Reddit",
+  "icons": { "128": "img/reddit128.png" },
+  "chrome_url_overrides" : {
+  "newtab": "index.html"
+  },
+  "permissions": ["http://*.reddit.com/", "https://*.reddit.com/"]
+}
