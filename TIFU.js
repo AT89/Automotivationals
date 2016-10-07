@@ -2,12 +2,12 @@ var load = function()
 {
 	$.ajax(
 		{
-			url: 'https://www.reddit.com/r/HybridAnimals.json',
+			url: 'https://www.reddit.com/r/wallpaper.json',
 			dataType: 'json',
 			success: function(data)
 			{
 				var post = null;
-				while(post == null || post.data.title.match(/Hybrid ?Animals/i) || post.data.title.match(/poll/i))
+				while(post == null || post.data.title.match(/wallpaper?/i) || post.data.title.match(/poll/i))
 				{
 					post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 				}

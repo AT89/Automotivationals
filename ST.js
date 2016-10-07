@@ -26,7 +26,7 @@ var load = function()
 				{
 					var post = null,
 					title = $('h1');
-					while(post == null || post.data.title.match(/Shower? thoughsts/i))
+					while(post == null || post.data.title.match(/Shower? thoughts/i))
 					{
 						post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 					}
