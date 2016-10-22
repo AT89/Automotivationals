@@ -20,13 +20,13 @@ var load = function()
 
 		$.ajax(
 			{
-				url: 'https://www.reddit.com/r/ShowerThoughts.json',
+				url: 'https://www.reddit.com/r/quotes.json',
 				dataType: 'json',
 				success: function(data)
 				{
 					var post = null,
 					title = $('h1');
-					while(post == null || post.data.title.match(/Shower? thoughts/i))
+					while(post == null || post.data.title.match(/quotes?/i))
 					{
 						post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 					}
@@ -38,17 +38,17 @@ var load = function()
 			});
 		};
 
-		//refresh page on click anywhere
-		$(function()
-		{
-			load();
-			$('body:not(.rbutton)').on('click', load); //WHY U NOT WORKING
-			$(window).on('resize scroll', function()
+			$(function()
 			{
-				var title = $('h1');
-				title.css(
-					{
-						'margin': '-' + (title.height() / 2) + 'px 0 0'
+				load();
+				$('body').on('click', load);
+				$(window).on('resize scroll', function()
+				{
+					var title = $('h1');
+					var contents = $('#Qcontents')
+					title.css(
+						{
+							'margin': '-' + (title.height() / 2) + 'px 0 0'
+						});
 					});
 				});
-			});

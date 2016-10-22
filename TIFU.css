@@ -1,0 +1,107 @@
+* {
+  transition-property: all;
+  transition-duration: 2s;
+  transition-origin: center;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  user-select: none;
+  cursor: default;
+}
+
+body {
+  background: #000 no-repeat center;
+  background-size: cover;
+}
+
+h1 {
+  position: absolute;
+  top: 20%;
+  right: 1em;
+  left: 1em;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-shadow: 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000,
+  0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 1.2em;
+  color: #FFF;
+  opacity: .9;
+}
+p {
+  position: absolute;
+  top: 40%;
+  right: 10em;
+  left: 10em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  color: white;
+  font-size: 1.5vw;
+  text-shadow: 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000,
+  0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000;
+  font-family: Lato, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Lato, sans-serif;
+}
+a.visited{
+  text-align: none;
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, -50%);
+  transform: translateY(-100%);
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+}
+.btn {
+  padding-right: 3em;
+  padding-left: 3em;
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+  opacity: 0.5;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+  max-width: 30px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+.btn:hover {
+  opacity: 1;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px red;
+}
+.rbutton{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+.rbtn{
+  opacity: 0.4;
+
+}
+.rbtn:hover{
+  opacity: 1;
+
+}

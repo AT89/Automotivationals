@@ -26,7 +26,7 @@ var load = function()
 				{
 					var post = null,
 					title = $('h1'),
-					contents = $('#TIFUcontents')
+					contents = $('p')
 					//add URL link
 					while((post == null || post.data.title.match(/today ? I ? fucked ? up/i))&& post == null || post.data.selftext.match(/today ? I ? fucked ? up/i) ) //not working :(
 						{
@@ -34,6 +34,7 @@ var load = function()
 							//SLICE(0,4) WHY U NOT WORK
 							//changing URL here
 							url = $('#reddit_url').attr("href", post.data.url)
+							contents = $('p').text(post.data.selftext)
 						}
 						title.text(post.data.title.trim().replace(/\.$/, ''))
 						$(window).trigger('resize');
@@ -48,7 +49,7 @@ var load = function()
 				$(window).on('resize scroll', function()
 				{
 					var title = $('h1');
-					var contents = $('#TIFUcontents')
+					var contents = $('p')
 					title.css(
 						{
 							'margin': '-' + (title.height() / 2) + 'px 0 0'

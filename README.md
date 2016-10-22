@@ -7,11 +7,17 @@ ALL CREDITS TO http://codepen.io/boylett/pen/oLapgA BOYLETT<3
 
 
 # Things I've added:
-* Writing prompts and its button
-* TIFU and its buttons
-* cool buttons!
+- 10/22/2016
+  * Added Quotes!
+  * Added content text for TIFU
+- 8/20/2016
+  * Writing prompts and its button
+  * TIFU and its buttons
+  * cool buttons!
 
 #TODO
-* Take out pesky tags from WP (and TIFU (0,6)), slice(0,4) but maybe turning the string into an array and splice(0,4)??
-* Make a link to reddit thread
-* with a reddit alien button
+  * [ ] Create native apps for swiping right to upvote and left to downvote
+  * [ ] oAuth for reddit logins
+  * [ ] Take out pesky tags from WP (and TIFU (0,6)), slice(0,4) but maybe turning the string into an array and splice(0,4)??
+  * [x] Make a link to reddit thread
+  * [x] with a reddit alien button
