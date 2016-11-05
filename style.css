@@ -19,7 +19,7 @@ body {
 
 h1 {
   position: absolute;
-  top: 50%;
+  top: 20%;
   right: 1em;
   left: 1em;
   margin: 0;
@@ -35,6 +35,28 @@ h1 {
   color: #FFF;
   opacity: .9;
 }
+p {
+  position: absolute;
+  top: 40%;
+  right: 10em;
+  left: 10em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  color: white;
+  font-size: 1.5vw;
+  text-shadow: 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000,
+  0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000;
+  font-family: Lato, sans-serif;
+}
+
+#pbox{
+  text-overflow: ellipsis;
+  height: 50vh;
+    border: .2vh solid;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -55,14 +77,14 @@ a.visited{
 .btn {
   padding-right: 3em;
   padding-left: 3em;
-  border: 1px solid;
+  border: .2vh solid;
   overflow: hidden;
   position: relative;
   opacity: 0.5;
   color: #fff;
   cursor: pointer;
   display: inline-block;;
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: 100;
   line-height: 25px;
   max-width: 30px;
@@ -75,7 +97,8 @@ a.visited{
 .btn:hover {
   opacity: 1;
   text-decoration: none;
-  box-shadow: inset 0 0 0 1px red;
+  box-shadow: inset 0 0 0 .2vh red;
+  z-index: 2;
 }
 .rbutton{
 position: absolute;
@@ -84,9 +107,7 @@ right: 0;
 }
 .rbtn{
   opacity: 0.4;
-
 }
 .rbtn:hover{
   opacity: 1;
-
 }
