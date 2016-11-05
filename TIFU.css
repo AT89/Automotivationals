@@ -49,7 +49,12 @@ p {
   text-shadow: 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000,
   0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000, 0 0 .5em #000;
   font-family: Lato, sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: .2vh solid orange;
+  max-height: 45vh;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -70,14 +75,14 @@ a.visited{
 .btn {
   padding-right: 3em;
   padding-left: 3em;
-  border: 1px solid;
+  border: .2vh solid;
   overflow: hidden;
   position: relative;
   opacity: 0.5;
   color: #fff;
   cursor: pointer;
   display: inline-block;;
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: 100;
   line-height: 25px;
   max-width: 30px;
@@ -86,11 +91,13 @@ a.visited{
   text-transform: uppercase;
   vertical-align: middle;
   width: 100%;
+  z-index: 2;
 }
 .btn:hover {
   opacity: 1;
   text-decoration: none;
-  box-shadow: inset 0 0 0 1px red;
+  box-shadow: inset 0 0 0 .2vh red;
+  z-index: 2;
 }
 .rbutton{
 position: absolute;
@@ -99,7 +106,6 @@ right: 0;
 }
 .rbtn{
   opacity: 0.4;
-
 }
 .rbtn:hover{
   opacity: 1;
