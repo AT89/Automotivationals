@@ -71,6 +71,7 @@ a.visited{
   display: inline-block;
   align-items: center;
   width: 75%;
+  opacity: 0.1;
 }
 .btn {
   padding-right: 3em;
@@ -78,7 +79,6 @@ a.visited{
   border: .2vh solid;
   overflow: hidden;
   position: relative;
-  opacity: 0.1;
   color: #fff;
   cursor: pointer;
   display: inline-block;;
@@ -93,11 +93,14 @@ a.visited{
   width: 100%;
   z-index: 2;
 }
-.btn:hover {
+.buttons:hover {
   opacity: 1;
   text-decoration: none;
-  box-shadow: inset 0 0 0 .2vh red;
   z-index: 2;
+}
+.btn:hover  {
+  box-shadow: inset 0 0 0 .1vh red;
+  transition-duration: 0s;
 }
 .rbutton{
 position: absolute;
