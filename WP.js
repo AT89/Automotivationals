@@ -14,6 +14,7 @@ var load = function()
 				if(post.data.preview.images[0] && post.data.preview.images[0].source)
 				{
 					$('body').css('background-image', 'url(' + post.data.preview.images[0].source.url + ')');
+					pic_url = $('#reddit_pic_url').attr("href", post.data.url)
 				}
 			}
 		});

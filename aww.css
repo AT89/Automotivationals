@@ -14,7 +14,6 @@ html, body {
 
 body {
   background: #000 no-repeat center;
-  background-size: cover;
 }
 
 h1 {
@@ -70,7 +69,7 @@ a.visited{
   transform: translateY(-100%);
   display: inline-block;
   align-items: center;
-  width: 100%;
+  width: 75%;
 }
 .btn {
   padding-right: 3em;
@@ -78,7 +77,7 @@ a.visited{
   border: .2vh solid;
   overflow: hidden;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.1;
   color: #fff;
   cursor: pointer;
   display: inline-block;;
@@ -103,10 +102,24 @@ a.visited{
 position: absolute;
 bottom: 0;
 right: 0;
+/*max-height: auto;
+max-width: 50%;*/
 }
 .rbtn{
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .rbtn:hover{
   opacity: 1;
+}
+.rbtn_pic{
+  opacity: .1;
+}
+.rbtn_pic:hover{
+  opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+  .buttons{
+    width: 100px;
+    transform: translateY(0%);
+  }
 }
