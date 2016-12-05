@@ -2,7 +2,7 @@ var load = function()
 {
 	$.ajax(
 		{
-			url: 'https://www.reddit.com/r/wallpaper.json',
+			url: 'https://www.reddit.com/r/roadporn.json',
 			dataType: 'json',
 			success: function(data)
 			{
