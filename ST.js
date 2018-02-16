@@ -13,7 +13,7 @@ var load = function()
 				}
 				if(post.data.url.includes("jpg") || post.data.url.includes("png"))
 				{
-					$('body').css('background-image', 'url(' + post.data.url+ ')');
+					$('body').css('background-image', 'url(' + post.data.url+')');
 					pic_url = $('#reddit_pic_url').attr("href", post.data.url)
 
 

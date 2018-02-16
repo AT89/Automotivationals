@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Lato, sans-serif;
+}
+a.visited{
+  text-align: none;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, -50%);
+  transform: translateY(-100%);
+  display: inline-block;
+  align-items: center;
+  width: 75%;
+  opacity: 0;
+}
+.btn {
+  padding-right: 3em;
+  padding-left: 3em;
+  border: .2vh solid;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;;
+  font-size: 2vh;
+  font-weight: 100;
+  line-height: 25px;
+  max-width: 30px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 2;
+}
+.buttons:hover {
+  opacity: 1;
+  text-decoration: none;
+  z-index: 2;
+}
+.btn:hover  {
+  box-shadow: inset 0 0 0 .1vh red;
+  transition-duration: 0s;
+}
+.rbutton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*max-height: auto;
+  max-width: 50%;*/
+}
+.rbtn{
+  opacity: 0;
+}
+.rbtn:hover{
+  opacity: 1;
+}
+.rbtn_pic{
+  opacity: 0;
+}
+.rbtn_pic:hover{
+  opacity: 1;
+}
