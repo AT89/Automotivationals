@@ -11,10 +11,13 @@ var load = function()
 				{
 					post = data.data.children[Math.floor(Math.random() * data.data.children.length)];
 				}
-				if(post.data.preview.images[0] && post.data.preview.images[0].source)
+				if(post.data.url.includes("jpg") || post.data.url.includes("png"))
 				{
-					$('body').css('background-image', 'url(' + post.data.preview.images[0].source.url + ')');
+					$('body').css('background-image', 'url(' + post.data.url+ ')');
 					pic_url = $('#reddit_pic_url').attr("href", post.data.url)
+
+
+					// need to make it go only IF the extension has .jpg or .png
 				}
 			}
 		});
