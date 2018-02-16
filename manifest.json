@@ -1,9 +1,9 @@
 {
   "name": "Stagnation",
-  "version": "1.32",
+  "version": "1.33",
   "author": "http://anhtice.com",
   "manifest_version": 2,
-  "description": "Gets very important information from Reddit",
+  "description": "When opening New Tab or Window, Gets very important information from Reddit",
   "icons": { "128": "img/reddit128.png" },
   "chrome_url_overrides" : {
   "newtab": "index.html"

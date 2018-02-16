@@ -26,8 +26,9 @@ h1 {
   padding: 0;
   overflow: visible;
   text-align: center;
-  text-shadow: 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000,
-  0 0 1em #000, 0 0 1em #000, 0 0 1em #000, 0 0 1em #000;
+  text-shadow: 0px 4px 3px rgba(0,0,0,1),
+              0px 8px 13px rgba(0,0,0,1),
+              0px 18px 23px rgba(0,0,0,1);
   font-family: Lato, sans-serif;
   font-weight: 300;
   font-size: 4vw;
