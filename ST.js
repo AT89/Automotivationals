@@ -15,9 +15,6 @@ var load = function()
 				{
 					$('body').css('background-image', 'url(' + post.data.url+')');
 					pic_url = $('#reddit_pic_url').attr("href", post.data.url)
-
-
-					// need to make it go only IF the extension has .jpg or .png
 				}
 			}
 		});

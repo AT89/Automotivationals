@@ -1,6 +1,6 @@
 {
   "name": "Stagnation",
-  "version": "1.34",
+  "version": "1.35",
   "author": "http://anhtice.com",
   "manifest_version": 2,
   "description": "When opening New Tab or Window, Gets very important information from Reddit",
@@ -8,5 +8,5 @@
   "chrome_url_overrides" : {
   "newtab": "index.html"
   },
-  "permissions": ["http://*.reddit.com/", "https://*.reddit.com/"]
+  "permissions": ["http://*.reddit.com/", "https://*.reddit.com/", "https://imgur.com"]
 }
