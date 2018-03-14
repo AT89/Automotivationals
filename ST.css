@@ -2,6 +2,7 @@
   transition-property: all;
   transition-duration: 2s;
   transition-origin: center;
+  cursor: none;
 }
 
 html, body {
@@ -9,7 +10,6 @@ html, body {
   height: 100%;
   overflow: hidden;
   user-select: none;
-  cursor: default;
 }
 
 body {
